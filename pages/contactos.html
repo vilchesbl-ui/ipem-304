@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPEM 304 JUAN CARLOS FERRERO</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo1.jpeg" class="logo">
+
+        <h1>IPEM N° 304 - JUAN CARLOS FERRERO</h1>
+
+        <nav>
+            <a href="../index.html">INICIO</a>
+            <a href="quienes_somos.html"> ¿QUIENES SOMOS? </a>
+            <a href="especialidad.html">ESPECIALIDAD </a>
+            <a href="proyectos.html">PROYECTOS</a>
+            <a href="contactos.html">CONTACTOS</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>¿En qué podemos ayudarte?</h2>
+            <p>
+                Este espacio está destinado a consultas de familias, estudiantes y
+                personas interesadas en conocer la propuesta educativa del IPEM 304.
+                Respondemos mensajes vinculados a inscripciones, información académica
+                y proyectos institucionales.
+            </p>
+        </section>
+
+        <section>
+            <h2>Datos de Contacto</h2>
+
+            <ul>
+                <li><strong>Dirección:</strong> Juan Bautista Alberdi S/N – Colonia Almada</li>
+                <li><strong>Teléfono fijo:</strong> 3572 – 494956</li>
+                <li><strong>Celular:</strong> 3571 – 697071</li>
+                <li><strong>Correo electrónico:</strong> ipem304@me.cba.gov.ar</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Horarios de Atención</h2>
+            <p>
+                Secretaría atiende de lunes a viernes de 13:00 a 19:00 hs.
+                También se encuentra disponible atención administrativa por la mañana.
+            </p>
+        </section>
+
+        <section>
+            <h2>¿Dónde estamos?</h2>
+
+            <p>
+                Nuestra institución se encuentra ubicada en la localidad de Colonia
+                Almada. Podés visitarnos en los horarios de atención o comunicarte
+                previamente por teléfono o correo electrónico.
+            </p>
+        </section>
+
+        <!----------UBICACIÓN CON BOOTSTRAP------->
+        <section class="container my-4">
+            <div class="mx-auto col-md-8">
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.804540672849!2d-63.86656432573512!3d-32.03599842647556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95cd17bb581942e1%3A0xc6947169f6c477b7!2sIPEM%20304%20Juan%20Carlos%20Ferrero!5e1!3m2!1ses!2sar!4v1763871779212!5m2!1ses!2sar"
+                        width="600" height="450" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- <div>
+            <h2>Formulario de Contacto</h2>
+
+            <form action="">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="text" id="email" name="email" required><br><br>
+
+                <label for="motivo">Motivo de la Consulta</label><br><br>
+
+                <label for="">Inscripción</label>
+                <input type="radio" name="gender"><br><br>
+
+                <label for="">Información académica</label>
+                <input type="radio" name="gender"><br><br>
+
+                <label for="">Proyectos Institucionales</label>
+                <input type="radio" name="gender"><br><br>
+
+                <label for="mensaje">Mensajes</label><br><br>
+                <textarea name="mensaje" id="mensaje" rows="5"></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div> -->
+
+        <h2>Formulario de Contacto</h2>
+
+        <form class="formulario-contacto">
+            <section class="container my-5">
+
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre completo"
+                        required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-label" id="email" placeholder="correo@ejemplo.com"></label>
+                </div>
+
+                <div class="mb-3">
+                    <label for="form-label"><strong>Motivo de la consulta</strong></label>
+
+                    <div class="mb-3 form-check">
+                        <input class="form-check-input" type="radio" name="motivo" id="motivo1">
+                        <label class="form-check-label" for="motivo1">Información Académica</label><br>
+
+                        <input class="form-check-input" type="radio" name="motivo" id="motivo2">
+                        <label class="form-check-label" for="motivo2">Proyectos Institucionales</label><br>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label><textarea class="form-control"
+                            id="mensaje" rows="4" placeholder="Escriba aquí su consulta" required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </section>
+        </form>
+
+        <section>
+            <p>
+                El IPEM 304 “Juan Carlos Ferrero” valora el diálogo con las familias y la
+                comunidad. Cada consulta es una oportunidad para construir vínculos y
+                fortalecer la educación pública.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-info">
+                <img src="../img/logo1.jpeg" alt="Logo del colegio">
+                <p>© 2025 IPEM N° 304 Juan Carlos Ferrero. Formando estudiantes para el presente y el futuro.</p><br>
+
+                <p>Web hecha por Belén Vilches</p>
+            </div>
+
+            <div>
+                <h3>Horarios de Atención</h3>
+                <ul>
+                    <li><strong>Lunes a viernes:</strong> 13:00 a 19:00 hs</li>
+                    <li>Secretaría llamar por la mañana</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><strong>Facebook</strong></li>
+                    <li><strong>Instagram</strong></li>
+                    <li><strong>X</strong></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><strong>Mail:</strong> ipem304@me.cba.gov.ar</li>
+                    <li><strong>Tel fjjo:</strong> 3572 - 494956</li>
+                    <li><strong>Celular: </strong> 3571 - 697071</li>
+                    <li><strong>Dirección:</strong> Juan Bautista Alberdi S/N</li>
+                </ul>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
