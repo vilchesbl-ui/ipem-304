@@ -1,0 +1,10 @@
+@use "../utilities/variables" as *;
+
+/* color de la lista de quienes somos */
+.ordenar{
+    font-size: 17px;
+    color: $color-letralista;
+    padding: 20px 30px;
+    margin-left: 30px; 
+    gap: 40px;
+}

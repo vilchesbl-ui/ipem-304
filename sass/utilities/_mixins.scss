@@ -1,0 +1,13 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+}
+
+@mixin media{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}

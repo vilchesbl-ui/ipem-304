@@ -1,0 +1,39 @@
+
+@use "../utilities/variables" as *;
+
+/* ---------- FOOTER ---------- */
+.footer-ipem {
+    background-color:$color-fondofooter;
+    color: $color-letrafooter;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: $texto-footer;
+    margin-top: auto;
+}
+
+/* color de los textos dentro de horarios redes y contacto */
+.lista-footer {
+    color: $color-listafooter;
+    font-family: $color-listafooter;
+    list-style: none;
+    padding-left: 0;
+}
+
+// texto final del footer
+.fin-footer-animado {
+    animation-name: fin-footer;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fin-footer {
+  from {
+    // opacity: 0;
+    transform: translatex(20px);
+  }
+  to {
+    // opacity: 1;
+    transform: translatex(0);
+  }
+}

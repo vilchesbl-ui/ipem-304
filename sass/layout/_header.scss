@@ -1,0 +1,26 @@
+@use "../utilities/variables" as *;
+
+
+/* color de fondo del header */
+header{
+    display: flex;
+    background-color: $color-header;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+header img{
+    display: flex;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* color del titulo de la pagina */
+header h1{
+    text-align: center;
+    color: $color-titulo;
+    font-size: 22px;
+    margin-bottom: 1px;
+}

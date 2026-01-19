@@ -1,142 +1,265 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
+.logo {
+  width: 100px;
+  border-radius: 50%;
 }
 
-/* -------- Header ---------- */
-header{
-    display: flex;
-    background-color:rgb(100, 149, 237);
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-    z-index: 100;
+.logo-rotando {
+  animation-name: rotar-logo;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.navbar{
-    font-size: 15px;
+.logo-rotando-footer {
+  animation-name: rotar-logo;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.navbar .nav-link{
-    font-weight: 500;
+@keyframes rotar-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.titulo-animado {
+  animation-name: titulo-pagina;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
-.navbar .nav-link:hover{
-    text-decoration: underline;
+@keyframes titulo-pagina {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* color de fondo del menu */
+.navbar {
+  font-size: 15px;
+  background-color: rgb(35, 82, 136) !important;
 }
 
-header img{
-    display: flex;
-    width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+/* color de la letra del menú */
+.navbar .nav-link {
+  color: rgb(92, 187, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1{
-    text-align: center;
-    color: black;
-    font-size: 22px;
-    margin-bottom: 1px;
+/* cambia de color al pasar el mouse */
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  color: rgb(226, 150, 9);
 }
 
-h2{
-    font-size: 20px;
-    color: rgb(52, 114, 246);
-    padding: 20px 5px;
-    margin-left: 10px;
-    margin-bottom: 8px;
-}
-
-p{
-    font-size: 17px;
-    color: rgb(0, 5, 15);
-    margin-top: 0;
-    margin-bottom: 15px;
-    padding: 5px;
-    margin:10px 30px;  
-    text-align: justify;
-}
-
-.ordenar{
-    font-size: 17px;
-    color: rgb(102, 147, 237);
-    padding: 20px 30px;
-    margin-left: 30px; 
-    gap: 40px;
+/* letra del menú */
+.nav-item {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* -------- FOTOS DE LA GALERÍA ------ */
-.galeria{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.galeria img{
-    width: 200px;
-    height: 150px;
-    object-fit: cover; /* ---- para no deformarse ---- */
-    border-radius: 8px;
+.galeria img {
+  width: 280px;
+  height: 180px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-.img-galeria{
-    display: flex;
-    justify-content: center;
+.img-galeria {
+  display: flex;
+  justify-content: center;
 }
 
-.proyecto{
-    background-color: rgb(250, 169, 70);
-    margin: 20px auto;
-    padding: 5px;
-    width: 95%;
-    border-radius: 15px;
+/* color de la fondo de las imagenes */
+.proyecto {
+  background-color: rgb(245, 180, 95);
+  margin: 20px auto;
+  padding: 5px;
+  width: 95%;
+  border-radius: 15px;
 }
 
-.subtitulo{
-    text-align: center;
-    color: rgb(37, 0, 249);
-    font-size: 22px;
-    margin-bottom: 10px;
+/* título de la caja de fotos */
+.subtitulo {
+  text-align: center;
+  color: rgb(13, 156, 244);
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
-.mapa{
-    max-width: 600px;
-    margin: auto;
+.mapa {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* color de fondo del formulario */
+.formulario-contacto {
+  background-color: #d2e2fa;
+  color: #363122;
+}
+
+/* color de los titulos del formulario */
+.form-label {
+  /* text-align:center; */
+  color: rgb(237, 151, 13);
+}
+
+/* color del boton enviar */
+.btn-primary {
+  background-color: rgb(47, 171, 248);
+  border-radius: 20%;
+  border-color: rgb(236, 164, 11);
+  color: blue;
 }
 
 .formulario-contacto {
-    background-color: #e6f0ff;
-    color: #664d00;           
+  text-align: left;
 }
 
-.form-label{
-    text-align: center;
+/* color de fondo del header */
+header {
+  display: flex;
+  background-color: #7cadf6;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 100;
 }
 
-/* --------TEXTO SELECCIONADO -------- */
-
-::selection{
-    background-color: rgb(246, 170, 64);
-    color: white;
+header img {
+  display: flex;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-div ul{
-    color: rgb(39, 38, 38);
+/* color del titulo de la pagina */
+header h1 {
+  text-align: center;
+  color: rgb(0, 52, 238);
+  font-size: 22px;
+  margin-bottom: 1px;
+}
+
+/* color de fondo del proyecto y letra */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(238, 245, 247);
+}
+
+/* color de la letra de todos los html */
+p {
+  font-size: 17px;
+  color: rgb(17, 20, 28);
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding: 5px;
+  /* margin:10px 30px;   */
+  text-align: justify;
+}
+
+/* color de los subtitulos */
+h2 {
+  font-size: 20px;
+  color: rgb(15, 163, 236);
+  padding: 20px 5px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+/* color de la lista de quienes somos */
+.ordenar {
+  font-size: 17px;
+  color: rgb(5, 87, 249);
+  padding: 20px 30px;
+  margin-left: 30px;
+  gap: 40px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer-ipem {
+  background-color: #7cadf6;
+  color: #004bfb;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: auto;
+}
+
+/* color de los textos dentro de horarios redes y contacto */
+.lista-footer {
+  color: #faf6f6;
+  font-family: #faf6f6;
+  list-style: none;
+  padding-left: 0;
+}
+
+.fin-footer-animado {
+  animation-name: fin-footer;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fin-footer {
+  from {
+    transform: translatex(20px);
+  }
+  to {
+    transform: translatex(0);
+  }
+}
+/* para selecionar textos y que quede pintado */
+::selection {
+  background-color: rgb(246, 170, 64);
+  color: white;
 }
 
 /*----------------- MEDIAQUERTE -------------- */
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+  }
+}
 
-@media (max-width:500px){
-    header{
-        flex-direction: column;
-        align-items: center; 
-}
-}
+/*# sourceMappingURL=styles.css.map */

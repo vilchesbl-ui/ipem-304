@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+
+/* color de fondo del proyecto y letra */
+body{
+    font-family: $texto-proyecto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $color-fondo;
+    // background-color: rgb(213, 235, 241);
+}
+

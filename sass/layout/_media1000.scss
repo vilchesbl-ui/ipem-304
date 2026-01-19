@@ -1,0 +1,8 @@
+@use "../utilities/mixins" as *;
+
+@media(max-width:1000px){
+    header{
+        @include media;
+    }
+}
+

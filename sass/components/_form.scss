@@ -1,0 +1,25 @@
+@use "../utilities/variables" as *;
+
+/* color de fondo del formulario */
+.formulario-contacto {
+    background-color: $color-fondoform;
+    color: $color-textoform;           
+}
+
+/* color de los titulos del formulario */
+.form-label{
+    /* text-align:center; */
+    color: $color-titulosform;
+}
+
+/* color del boton enviar */
+.btn-primary{
+    background-color: $color-botonform;
+    border-radius: 20%;
+    border-color: $color-bordeboton;
+    color: $color-boton;
+}
+
+.formulario-contacto{
+    text-align: left;
+}

@@ -1,0 +1,38 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* -------- FOTOS DE LA GALERÍA ------ */
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img{
+    width: 280px;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.img-galeria{
+    @include flex-center;
+}
+
+/* color de la fondo de las imagenes */
+.proyecto{
+    background-color: $color-fondogaleria;
+    margin: 20px auto;
+    padding: 5px;
+    width: 95%;
+    border-radius: 15px;
+}
+
+/* título de la caja de fotos */
+.subtitulo{
+    text-align: center;
+    color: $color-titulodegaleria;
+    font-size: 22px;
+    margin-bottom: 10px;
+}

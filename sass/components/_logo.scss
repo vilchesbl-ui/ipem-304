@@ -1,0 +1,31 @@
+
+// tamaño del logo
+.logo{
+    width: 100px;
+    border-radius: 50%;
+}
+
+// animación del logo
+.logo-rotando {
+    animation-name: rotar-logo;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.logo-rotando-footer{
+    animation-name: rotar-logo;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotar-logo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+       transform: rotate(360deg);
+    }
+}

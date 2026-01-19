@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+
+/* color de fondo del menu */
+.navbar{
+    font-size: 15px;
+    background-color: $color-fondomenu !important;
+}
+
+/* color de la letra del menú */
+.navbar .nav-link{
+    // font-weight: 500;
+    color: $color-letramenu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cambia de color al pasar el mouse */
+.navbar .nav-link:hover{
+    text-decoration: underline;
+    color:$color-hovermenu;
+}
+
+/* letra del menú */
+.nav-item{
+    font-family: $texto-menu;
+}

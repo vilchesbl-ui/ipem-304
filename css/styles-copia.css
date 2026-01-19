@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* color de fondo del proyecto y letra */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(213, 235, 241);
+}
+
+/* color de fondo del header */
+header{
+    display: flex;
+    background-color:rgb(94, 142, 231);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+/* color de fondo del menu */
+.navbar{
+    font-size: 15px;
+    background-color: rgb(149, 190, 238) !important;
+}
+
+/* color de la letra del menú */
+.navbar .nav-link{
+    font-weight: 500;
+    color: rgb(10, 55, 216);
+}
+
+/* cambia de color al pasar el mouse */
+.navbar .nav-link:hover{
+    text-decoration: underline;
+    color:rgb(226, 150, 9);
+}
+
+/* letra del menú */
+.nav-item{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header img{
+    display: flex;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+/* color del titulo de la pagina */
+header h1{
+    text-align: center;
+    color: rgb(18, 15, 15);
+    font-size: 22px;
+    margin-bottom: 1px;
+}
+
+/* color de los subtitulos */
+h2{
+    font-size: 20px;
+    color: rgb(54, 27, 229);
+    padding: 20px 5px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+/* color de la letra de todos los html */
+p{
+    font-size: 17px;
+    color: rgb(17, 20, 28);
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 5px;
+    /* margin:10px 30px;   */
+    text-align: justify;
+}
+
+/* color de la lista de quienes somos */
+.ordenar{
+    font-size: 17px;
+    color: rgb(104, 150, 241);
+    padding: 20px 30px;
+    margin-left: 30px; 
+    gap: 40px;
+}
+
+/* -------- FOTOS DE LA GALERÍA ------ */
+.galeria{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover; /* ---- para no deformarse ---- */
+    border-radius: 8px;
+}
+
+.img-galeria{
+    display: flex;
+    justify-content: center;
+}
+
+/* color de la fondo de las imagenes */
+.proyecto{
+    background-color: rgb(250, 155, 31);
+    margin: 20px auto;
+    padding: 5px;
+    width: 95%;
+    border-radius: 15px;
+}
+
+/* título de la caja de fotos */
+.subtitulo{
+    text-align: center;
+    color: rgb(13, 50, 233);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.mapa{
+    max-width: 600px;
+    margin: auto;
+}
+
+/* color de fondo del formulario */
+.formulario-contacto {
+    background-color: #d2e2fa;
+    color: #363122;           
+}
+
+/* color de los titulos del formulario */
+.form-label{
+    /* text-align:center; */
+    color: rgb(15, 30, 235);
+}
+
+/* color del boton enviar */
+.btn-primary{
+    background-color: rgb(47, 171, 248);
+    border-radius: 20%;
+    border-color: rgb(236, 164, 11);
+    color: blue;
+
+}
+/* para selecionar textos y que quede pintado */
+::selection{
+    background-color: rgb(246, 170, 64);
+    color: white;
+}
+/* ---------- FOOTER ---------- */
+
+.footer-ipem {
+    background-color: #5593f0;
+    color: #f0e8e8;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: auto;
+}
+
+/* color de los textos dentro de horarios redes y contacto */
+.lista-footer {
+    color: #06030f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    list-style: none;
+    padding-left: 0;
+}
+
+/*----------------- MEDIAQUERTE -------------- */
+
+@media (max-width:500px){
+    header{
+        flex-direction: column;
+        align-items: center;    
+    }
+}

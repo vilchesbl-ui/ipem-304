@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+/* para selecionar textos y que quede pintado */
+::selection{
+    background-color: $color-seleccionfondo;
+    color: $color-seleccionletra;
+}
