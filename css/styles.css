@@ -136,7 +136,6 @@
 
 /* color de los titulos del formulario */
 .form-label {
-  /* text-align:center; */
   color: rgb(237, 159, 41);
 }
 
@@ -190,21 +189,20 @@ body {
 /* color de la letra de todos los html */
 p {
   font-size: 17px;
-  color: rgb(17, 20, 28);
   margin-top: 0;
+  color: rgb(17, 20, 28);
   margin-bottom: 15px;
   padding: 5px;
-  /* margin:10px 30px;   */
   text-align: justify;
+  line-height: 1.5;
 }
 
 /* color de los subtitulos */
 h2 {
   font-size: 20px;
   color: rgb(15, 163, 236);
-  padding: 20px 5px;
-  margin-left: 10px;
-  margin-bottom: 8px;
+  margin: 24px 0 10px 0;
+  padding: 0;
 }
 
 .contenedor {
@@ -264,6 +262,9 @@ h2 {
 
 /*----------------- MEDIAQUERTE -------------- */
 @media (max-width: 500px) {
+  .contenedor {
+    padding: 0 16px;
+  }
   .galeria {
     flex-direction: column;
     align-items: center;
@@ -273,6 +274,12 @@ h2 {
     max-width: 320px;
     height: 200px;
     object-fit: cover;
+  }
+  p {
+    text-align: justify;
+    padding: 0;
+    margin-bottom: 12px;
+    line-height: 1.4;
   }
 }
 @media (max-width: 1000px) {

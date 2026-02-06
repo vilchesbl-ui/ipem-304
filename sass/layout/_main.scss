@@ -1,24 +1,26 @@
 @use "../utilities/variables" as *;
 
-
 /* color de la letra de todos los html */
 p{
     font-size: 17px;
-    color: $color-textos;
     margin-top: 0;
+    color: $color-textos;
+    // margin-top: 0 0 14px 0;
     margin-bottom: 15px;
     padding: 5px;
-    /* margin:10px 30px;   */
     text-align: justify;
+    line-height: 1.5;
 }
 
 /* color de los subtitulos */
 h2{
     font-size: 20px;
     color:$color-subtitulos;
-    padding: 20px 5px;
-    margin-left: 10px;
-    margin-bottom: 8px;
+    // padding: 20px 5px;
+    // margin-left: 10px;
+    // margin-bottom: 8px;
+    margin: 24px 0 10px 0;
+    padding: 0;
 }
 
 // textos centrados de la pagina

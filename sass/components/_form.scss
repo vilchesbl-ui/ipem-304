@@ -4,16 +4,13 @@
 .formulario-contacto {
     background-color: $color-fondoform;
     color: $color-textoform;
-
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-
 }
 
 /* color de los titulos del formulario */
 .form-label {
-    /* text-align:center; */
     color: $color-titulosform;
 }
 
