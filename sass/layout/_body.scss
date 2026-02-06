@@ -7,6 +7,6 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-color: $color-fondo;
-    // background-color: rgb(213, 235, 241);
+    overflow-x: hidden;
 }
 

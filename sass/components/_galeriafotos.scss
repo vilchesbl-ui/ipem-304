@@ -2,22 +2,34 @@
 @use "../utilities/mixins" as *;
 
 /* -------- FOTOS DE LA GALERÍA ------ */
-.galeria{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+.galeria {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.galeria img{
-    width: 280px;
+.galeria img {
+    width: 300px;
     height: 180px;
-    border-radius: 8px;
     object-fit: cover;
-}
+    border-radius: 8px;
+  }
 
-.img-galeria{
-    @include flex-center;
+// imagenes del html quienes somos
+.img-galeria {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+
+ img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 
 /* color de la fondo de las imagenes */
